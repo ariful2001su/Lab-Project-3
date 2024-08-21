@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>postbook</title>
+    <link rel="stylesheet" href="./arif.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>welcome to postbook</h1>
+    <div class="login-form">
+        <h3>Please Login</h3>
+        <form>
+            <input type="text" name="user-id" id="user-id" placeholder="User Id">
+            <input type="password" id="password" placeholder="Password">
+        </form>
+        <button onclick="handleLogin()" class="login-btn">Login</button>
+    </div>
+
+    <!-- error message -->
+
+    <div id="user-login-error" class=" error hidden">
+        <h3> User id not found or Password is wrong! Please try Again!</h3>
+    </div>
+
+    <script src="./js/login.js"></script>
+</body>
+</html>
